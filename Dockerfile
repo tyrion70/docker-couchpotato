@@ -8,7 +8,7 @@ ENV LANG='en_US.UTF-8' \
 RUN apk -U upgrade && \
     apk -U add \
         ca-certificates git \
-        py-pip ca-certificates git python py-libxml2 py-lxml py-pip  \
+        py2-pip ca-certificates git python py-libxml2 py-lxml py-pip  \
         make gcc g++ python-dev openssl-dev libffi-dev \
     && \
     pip --no-cache-dir install --upgrade setuptools && \
